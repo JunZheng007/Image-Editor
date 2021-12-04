@@ -1,6 +1,7 @@
 package com.jun_zheng.imageeditor.overview
 
 import android.os.Bundle
+import android.os.Environment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,15 +16,14 @@ class OverviewFragment : Fragment() {
     private val viewModel: OverviewViewModel by lazy {
         ViewModelProvider(this)[OverviewViewModel::class.java]
     }
-    private lateinit var binding: OverviewFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
-        binding = OverviewFragmentBinding.inflate(inflater)
-        binding.lifecycleOwner = this
+        val binding = OverviewFragmentBinding.inflate(inflater)
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         binding.photosGrid.adapter = PhotoGridAdapter(PhotoGridAdapter.OnClickListener {
             viewModel.showEditorView(it)

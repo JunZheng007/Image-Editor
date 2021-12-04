@@ -17,11 +17,29 @@
 
     <fragment
         android:id="@+id/editorFragment"
-        android:name="com.jun_zheng.imageeditor.editor.EditorFragment"
+        android:name="com.jun_zheng.imageeditor.editor.DetailFragment"
         android:label="editor_fragment"
-        tools:layout="@layout/editor_fragment">
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="selectedProperty"
+            app:argType="com.jun_zheng.imageeditor.network.ImageProperty"/>
+        <action
+            android:id="@+id/action_editorFragment_to_imageInfoFragment"
+            app:destination="@id/imageInfoFragment" />
+        <action
+            android:id="@+id/action_editorFragment_to_filterSelectFragment"
+            app:destination="@id/filterSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageInfoFragment"
+        android:name="com.jun_zheng.imageeditor.imageInfo.ImageInfoFragment"
+        android:label="ImageInfoFragment">
         <argument
             android:name="selectedProperty"
             app:argType="com.jun_zheng.imageeditor.network.ImageProperty"/>
     </fragment>
+    <fragment
+        android:id="@+id/filterSelectFragment"
+        android:name="com.jun_zheng.imageeditor.editor.FilterSelectFragment"
+        android:label="FilterSelectFragment" />
 </navigation>

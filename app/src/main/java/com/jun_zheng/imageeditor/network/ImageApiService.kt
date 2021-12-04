@@ -6,6 +6,8 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Url
+import java.io.File
 
 private const val BASE_RUL = "http://eulerity-hackathon.appspot.com/"
 
@@ -28,3 +30,5 @@ object ImageApi {
         retrofit.create(ImageApiService::class.java)
     }
 }
+
+

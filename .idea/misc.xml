@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/drawable/baseline_close_black_24dp.xml" value="0.15572916666666667" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/drawable/got_s.xml" value="0.159375" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/drawable/ic_broken_image.xml" value="0.15572916666666667" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/drawable/loading_img.xml" value="0.15572916666666667" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/activity_main.xml" value="0.12864583333333332" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/detail_fragment.xml" value="0.264" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/editor_fragment.xml" value="0.14322916666666666" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/filter_select_fragment.xml" value="0.2" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/fragment_filter_select.xml" value="0.13958333333333334" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/grid_view_item.xml" value="0.14322916666666666" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/image_info_fragment.xml" value="0.245018115942029" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/layout/overview_fragment.xml" value="0.14322916666666666" />
+        <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/menu/detail_menu.xml" value="0.27395833333333336" />
         <entry key="..\:/Training/Android/ImageEditor/app/src/main/res/xml/network_security_config.xml" value="0.14322916666666666" />
       </map>
     </option>

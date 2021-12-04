@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.jun_zheng.imageeditor.network.ImageProperty
 import com.jun_zheng.imageeditor.overview.PhotoGridAdapter
+import ja.burhanrashid52.photoeditor.PhotoEditorView
 
 @BindingAdapter("imageUrl")
 fun bindImage(imageView: ImageView, imgUrl: String?) {
@@ -28,4 +29,14 @@ fun bindImage(imageView: ImageView, imgUrl: String?) {
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<ImageProperty>?) {
     val adapter = recyclerView.adapter as PhotoGridAdapter
     adapter.submitList(data)
+}
+
+@BindingAdapter("photo_src")
+fun bindPhotoEditor(photoEditorView: PhotoEditorView, photo_src: String?) {
+    photo_src?.let {
+        val imgUri = it.toUri().buildUpon().scheme("https").build()
+        Glide.with(photoEditorView.context)
+            .load(imgUri)
+            .into(photoEditorView.source)
+    }
 }

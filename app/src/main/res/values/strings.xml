@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Image Editor</string>
+    <string name="information">Information</string>
+    <string name="edit">Edit</string>
+    <string name="upload">Upload</string>
+    <string name="created_time">Created Time: %s\n</string>
+    <string name="update_time">Update Time: %s</string>
+    <string name="filter">Filter</string>
+    <string name="text">Text</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="none">None</string>
+    <string name="auto_fix">Auto Fix</string>
+    <string name="black_white">Black White</string>
+    <string name="fish_eye">Fish Eye</string>
+    <string name="contrast">Contrast</string>
+    <string name="brightness">Brightness</string>
 </resources>
