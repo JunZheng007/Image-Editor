@@ -22,7 +22,7 @@
             android:imeOptions="actionDone"
             android:inputType="textPersonName"
             android:text="@string/text"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/filterSelect"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
